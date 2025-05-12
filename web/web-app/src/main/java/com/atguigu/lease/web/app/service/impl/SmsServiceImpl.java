@@ -13,7 +13,7 @@ public class SmsServiceImpl implements SmsService {
     private Client client;
 
     @Override
-    public void sendCode(String phone, String code) {
+    public void     sendCode(String phone, String code) {
         SendSmsRequest sendSmsRequest = new SendSmsRequest();
         sendSmsRequest.setPhoneNumbers(phone);
         sendSmsRequest.setSignName("阿里云短信测试");
